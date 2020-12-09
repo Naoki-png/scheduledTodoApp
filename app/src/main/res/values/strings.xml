@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ScheduledTodo</string>
+    <array name="scheduled_time">
+        <item>"Sunday"</item>
+        <item>"Monday"</item>
+        <item>"Tuesday"</item>
+        <item>"Wednesday"</item>
+        <item>"Thursday"</item>
+        <item>"Friday"</item>
+        <item>"Saturday"</item>
+        <item>"the beginning of the month"</item>
+        <item>"the end of the month"</item>
+    </array>
+</resources>
