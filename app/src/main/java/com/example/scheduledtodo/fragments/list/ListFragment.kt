@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.scheduledtodo.R
 import com.example.scheduledtodo.data.TodoModel
 import com.example.scheduledtodo.data.TodoViewModel
-import kotlinx.android.synthetic.main.add_todo.view.*
+import kotlinx.android.synthetic.main.add_todo_dialog.view.*
 
 class ListFragment : Fragment() {
     private val mTodoViewModel: TodoViewModel by viewModels()
@@ -50,7 +50,7 @@ class ListFragment : Fragment() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.add_todo -> {
-                val addView = LayoutInflater.from(requireContext()).inflate(R.layout.add_todo, list, false)
+                val addView = LayoutInflater.from(requireContext()).inflate(R.layout.add_todo_dialog, list, false)
                 val addDialogBuilder = AlertDialog.Builder(requireContext())
                         .setView(addView)
                         .setTitle("ADD NEW TASK")
