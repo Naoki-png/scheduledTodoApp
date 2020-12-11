@@ -68,6 +68,9 @@ dependencies {
     //workManager
     implementation "androidx.work:work-runtime-ktx:2.4.0"
 
+    //MergeRecyclerAdapter
+    implementation 'me.mvdw.recyclerviewmergeadapter:recyclerviewmergeadapter:2.1.0'
+
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'

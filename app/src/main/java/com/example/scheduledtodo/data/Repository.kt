@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData
 
 class Repository(private val todoDao: TodoDao) {
     val getAllData: LiveData<List<TodoModel>> = todoDao.getAllData()
+    val getSundayData: LiveData<List<TodoModel>> = todoDao.getSundayData()
 
     suspend fun insertData(todoModel: TodoModel) {
         return todoDao.insertData(todoModel)
@@ -20,4 +21,5 @@ class Repository(private val todoDao: TodoDao) {
     suspend fun deleteAllData() {
         return todoDao.deleteAllData()
     }
+
 }

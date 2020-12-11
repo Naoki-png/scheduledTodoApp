@@ -19,4 +19,7 @@ interface TodoDao {
 
     @Query("DELETE FROM todo_table")
     suspend fun deleteAllData()
+
+    @Query("SELECT * FROM todo_table WHERE scheduledTime = 'Sunday'")
+    fun getSundayData(): LiveData<List<TodoModel>>
 }

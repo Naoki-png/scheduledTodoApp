@@ -24,8 +24,8 @@ class TodoAdapter: RecyclerView.Adapter<TodoAdapter.TodoViewHolder>() {
     override fun getItemCount() = dataList.size
 
     override fun onBindViewHolder(holder: TodoViewHolder, position: Int) {
-        holder.title.setText(dataList[position].title)
-        holder.description.setText(dataList[position].description)
+        holder.title.text = dataList[position].title
+        holder.description.text = dataList[position].description
     }
 
     fun setTodoDataList(todoDataList: List<TodoModel>) {

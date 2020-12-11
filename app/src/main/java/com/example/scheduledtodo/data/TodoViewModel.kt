@@ -11,6 +11,7 @@ class TodoViewModel(application: Application): AndroidViewModel(application) {
     private val repository = Repository(todoDao)
 
     val getAllData = repository.getAllData
+    val getSundayData = repository.getSundayData
 
     fun insertData(todoModel: TodoModel) {
         viewModelScope.launch(Dispatchers.IO) {
